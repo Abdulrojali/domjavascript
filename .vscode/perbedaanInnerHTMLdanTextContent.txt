@@ -1,0 +1,10 @@
+perbedaan dari innerHTML dan TextContent
+
+1. innerHTML: Properti innerHTML digunakan untuk mengakses atau mengubah isi HTML yang terkandung dalam elemen, termasuk tag HTML, teks, dan elemen anak di dalamnya. Ketika Anda mengatur innerHTML
+,konten HTML akan di-render dan menggantikan konten sebelumnya.
+
+2. textContent: Properti textContent digunakan untuk mengakses atau mengubah konten teks yang terkandung dalam elemen, tanpa menginterpretasikan sebagai HTML. Ketika Anda mengatur textContent, 
+semua tag HTML di dalamnya akan diabaikan dan dianggap sebagai teks biasa.
+
+jadi apabila kita menambah tag didalam textContent akan dijadikan teks biasa bukan menjadi tag HTML
+berbeda dengan innerHTML yang akan menjadikan tag tersebut tag HTML

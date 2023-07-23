@@ -1,0 +1,16 @@
+appen dan appenChild sama sama menambahkan element dan teks
+
+
+tetapi appen tidak dapat membaca element html yang di tambah
+sedangkan appenChild dapat membaca element html
+
+
+contoh 
+let h2=document.createElement('h2')
+h2.appen('this is teks')
+
+contoh 
+let ouput=document.querySelector('div')
+output.appenChild('h2')
+
+

@@ -1,0 +1,9 @@
+Dalam DOM JavaScript, tidak disarankan untuk membuat elemen menggunakan string literal (misalnya, menggunakan HTML string) karena dapat menimbulkan masalah keamanan dan kerentanan terhadap serangan XSS (Cross-Site Scripting).
+
+Ketika Anda membuat elemen menggunakan string literal, kemungkinan besar Anda akan menggunakan metode seperti innerHTML atau insertAdjacentHTML untuk menyisipkan string tersebut ke dalam elemen yang ada di dalam dokumen. Meskipun metode ini sederhana dan mudah digunakan, mereka juga membuka celah keamanan yang disebut Cross-Site Scripting (XSS).
+
+XSS terjadi ketika teks atau kode yang tidak dapat dipercaya disisipkan ke dalam dokumen web, dan dieksekusi oleh browser pengguna. Jika string literal yang digunakan untuk membuat elemen mengandung potensi serangan XSS, seperti skrip berbahaya, hal ini dapat membahayakan keamanan situs web dan pengguna.
+
+Untuk menghindari risiko XSS, sebaiknya menggunakan API DOM yang disediakan oleh JavaScript untuk membuat dan memanipulasi elemen. Misalnya, Anda dapat menggunakan metode createElement untuk membuat elemen baru, mengatur atribut dan kontennya menggunakan metode yang aman seperti setAttribute dan textContent, dan menambahkan elemen tersebut ke dalam struktur dokumen menggunakan metode appendChild atau metode lain yang aman.
+
+Dengan menggunakan API DOM yang disediakan, Anda dapat memastikan bahwa manipulasi elemen dilakukan dengan aman dan menghindari kerentanan keamanan yang dapat ditimbulkan oleh penggunaan string literal.

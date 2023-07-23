@@ -1,0 +1,27 @@
+addEventListener adalah metode dalam JavaScript yang digunakan untuk menambahkan fungsi (atau fungsi yang disebut "handler") ke suatu elemen, sehingga handler tersebut akan dipanggil ketika suatu peristiwa (event) terjadi pada elemen tersebut. 
+
+beberapa methode pada addEventListener yang sering di gunakan ;
+
+1. click: Metode ini digunakan untuk menangani event klik pada elemen. Biasanya digunakan untuk menangani klik tombol, tautan, atau elemen interaktif lainnya.
+contoh : 
+ element.addEventListener('click', handlerFunction);
+
+2. submit: Metode ini digunakan untuk menangani event pengiriman formulir. Ketika pengguna menekan tombol "Submit" pada suatu formulir, handlerFunction akan dipanggil.
+contoh :
+element.addEventListener('submit', handlerFunction);
+
+3. keydown dan keyup: Metode-metode ini digunakan untuk menangani event ketika pengguna menekan atau melepaskan tombol keyboard. Dapat digunakan untuk melakukan tindakan berdasarkan tombol yang ditekan, misalnya, mengubah nilai input saat tombol tertentu ditekan.
+contoh :
+element.addEventListener('keydown', handlerFunction);
+element.addEventListener('keyup', handlerFunction);
+
+
+4. mouseover dan mouseout: Metode-metode ini digunakan untuk menangani event saat kursor mouse memasuki atau meninggalkan suatu elemen.
+contoh :
+element.addEventListener('mouseover', handlerFunction);
+element.addEventListener('mouseout', handlerFunction);
+
+
+5. change: Metode ini digunakan untuk menangani event saat nilai suatu elemen input berubah. Digunakan terutama untuk input seperti <input>, <select>, dan <textarea>.
+contoh :
+element.addEventListener('change', handlerFunction);

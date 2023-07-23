@@ -1,0 +1,18 @@
+1. event.target: Properti event.target mengacu pada elemen HTML yang secara langsung memicu event. Ini adalah elemen spesifik yang menjadi sumber event, misalnya tombol yang diklik atau elemen yang di-hover. Properti ini memberikan akses langsung ke elemen tersebut, sehingga Anda dapat mengakses properti atau metode elemen tersebut. Misalnya, Anda dapat mengubah atribut src dari gambar yang diklik dengan menggunakan event.target.src.
+Contoh penggunaan event.target:
+function handleClick(event) {
+  console.log('Event target:', event.target); // Menampilkan elemen yang memicu event
+  event.target.style.backgroundColor = 'red'; // Mengubah warna latar belakang elemen yang memicu event
+}
+
+2. this: Dalam fungsi event handler, this mengacu pada elemen yang saat ini memiliki event listener terpasang padanya. Ini berarti this merujuk pada elemen yang memiliki event listener, bukan elemen yang secara langsung memicu event. Dalam banyak kasus, this dan event.target mengacu pada elemen yang sama, tetapi ada situasi di mana perbedaan ini menjadi jelas. Misalnya, jika Anda menggunakan metode addEventListener untuk menambahkan event listener ke elemen induk dan kemudian mengklik elemen anak di dalamnya, this akan merujuk pada elemen induk, sedangkan event.target akan merujuk pada elemen anak yang memicu event.
+Contoh penggunaan this:
+const parentElement = document.querySelector('.parent');
+
+function handleClick(event) {
+  console.log('Event target:', event.target); // Menampilkan elemen yang memicu event
+  console.log('This:', this); // Menampilkan elemen yang memiliki event listener
+  this.style.backgroundColor = 'red'; // Mengubah warna latar belakang elemen yang memiliki event listener
+}
+
+parentElement.addEventListener('click', handleClick);

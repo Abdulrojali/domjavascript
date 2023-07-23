@@ -1,0 +1,36 @@
+perbedaan node dan nodelist
+
+1.node digunakan pada element,attribut,teks,dan document
+Beberapa metode penting yang tersedia pada objek Node adalah:
+
+- appendChild(node): Menambahkan node sebagai anak terakhir dari node saat ini.
+- removeChild(node): Menghapus node anak dari node saat ini.
+- parentNode: Mengembalikan node induk dari node saat ini.
+- childNodes: Mengembalikan NodeList yang berisi semua node anak dari node saat ini.
+
+contoh pemanggilan node
+* let node=document.queryselector('p') // artinya memanggil element p pertama pada html
+* let attribut=document.createAttribut('src','img.jpg')// membuat attribut 
+* let setAttribut=atribut.setAttribut('src','pemandangan.jpg') mengubah attribut dari variabel atribut
+* let paragraf=document.createElement('p')// membuat element p
+
+node support methode appendChild/ menggabungkan 
+contoh 
+*let teks=document.createTeks('hallo')
+* let gabungTeks=paragraf.appendChild(teks) artinya variabel teks masuk kedalam variabel paragraf
+
+2. nodelist digunakan pada queryselectorAll atau childNodes
+contoh
+* let p=document.queryselectorAll('p') artinya memanggil semua element p di html
+
+nodelist sendiri agak mirip dengan array tetapi methode array tidak support nodelist 
+seperti foreach,map,fillter
+
+untuk bisa menggunakan methode array kita harus merubahnya menjadi array menggunakan Array.from()
+contoh : 
+let nodeArray=Array.from(p)
+let node=nodeArray[0];
+
+
+
+

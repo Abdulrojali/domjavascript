@@ -1,0 +1,11 @@
+perbedaan childNodes dan childElements
+
+1. childNodes: Properti childNodes mengembalikan daftar node anak dari elemen yang dipilih, termasuk node teks, komentar, dan elemen. Anda perlu memfilter node elemen jika hanya tertarik pada elemen anak.
+ Contoh penggunaan:
+ var parentElement = document.getElementById("parentElement");
+var childNodes = parentElement.childNodes;
+
+2. children: Properti children mengembalikan daftar elemen anak dari elemen yang dipilih, mengabaikan node teks atau komentar. 
+Ini memberikan Anda daftar elemen yang lebih khusus. Contoh penggunaan:
+var parentElement = document.getElementById("parentElement");
+var children = parentElement.children;

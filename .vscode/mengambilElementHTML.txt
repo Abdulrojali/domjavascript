@@ -1,0 +1,17 @@
+cara mengambil element html menggunakan dom
+
+
+// untuk mengambil element html class menggunakan titik didepan nama classnya
+let class=document.queryselector('.class')
+
+// untuk mengambil element html id menggunakan hastag didepan nya
+let id=document.queryselector('#id')
+
+// apabila memanggil tag html tidak perlu menggunakan hastag atau titik
+let p=document.queryselector('p')
+ 
+a. document.queryselector() digunakan untuk memanggil bentuk dari class dan id lalu tag html lain
+b. document.queryselectorAll() digunakan untuk memanggil banyak element
+c. document.getElementById() digunakan untuk mengambil element id html
+d. document.getElementByClass() digunakan untuk mengambil element class html
+

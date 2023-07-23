@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .grids{
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            gap:5px;
+        }
+        .content{
+            border: 1px solid gray;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 20px;
+        }
+        .content h3{   
+            border-bottom: 1px solid red;
+            font-size: 2.5em;
+            font-weight: 800;
+            text-transform: capitalize;
+        }
+        .content p{
+            display: none;
+            font-size: 1em;
+            font-weight: 150;
+        }
+        .content p.active{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grids">
+            <div class="content">
+                <h3 class="judul">teks1</h3>
+                <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ad.</p>
+            </div>
+            <div class="content">
+                <h3 class="judul">teks2</h3>
+                <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ad.</p>
+            </div>
+            <div class="content">
+                <h3 class="judul">teks3</h3>
+                <p class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ad.</p>
+            </div>
+        </div>
+    </div>
+    <script src="latihan1.js"></script>
+</body>
+</html>

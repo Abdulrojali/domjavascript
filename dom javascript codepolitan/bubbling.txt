@@ -1,0 +1,36 @@
+event bubbling adalah event bersarang pada sebuah element
+contoh
+<div class='parent'>
+<p>this color</p>
+<button class='click'>click me</button>
+</div>
+
+
+let parent=document.querySelector('.parent')
+let button=document.querySelector('.click')
+
+// event button
+button.addEventListener('click',function(e){
+    parent.style.backgroundColor=generateColor
+    e.stopPropagation()
+})
+function generateColor(){
+    let r=Math.floor(Math.random()*225)
+    let g=Math.floor(Math.random()*225)
+    let b=Math.floor(Math.random()*225)
+    return `rgb(${r},${g},${b})
+}
+
+// event p
+let p=document.querySelector('p')
+p.addEventListener('click',function(){
+    p.classlist.toggle('hidden')
+})
+
+ini akan menjadi event bubbling karena terdapat 2 event didalam parent element
+untuk mengatasinya menggunakan stopPropagation() Di gunakan untuk menghentikan event dom selanjutnya
+
+css
+.hidden{
+    display:none;
+}

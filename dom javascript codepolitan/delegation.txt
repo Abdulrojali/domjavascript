@@ -1,0 +1,14 @@
+delegation adalah target pada kumpulan element 
+
+contoh
+let ul= document.querySelector('ul')
+let li=ul.children
+
+li.foreach(el)=>{
+    el.addEvenetlistener('click',function(){
+        el.target.remove()
+    })
+}
+
+dari contoh di atas kita meremove element li yang di click dengan menggunakan target element yang 
+di click otomatis akan terhapus dan tidak terpengaruh kepada element li lain nya hanya yang di click saja 

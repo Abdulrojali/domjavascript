@@ -1,0 +1,8 @@
+beberapa tipe data yang ada di dom
+
+1. document       representasi halaman web
+2. node           best class di dom antara lain attr,document,element
+3. element        representasi object element web
+4. attr           repesentasi object atribut
+5. nodelist       merupakan array/collection yang berisi node
+6. nameNodeMap    collection yang berisi attr dalam bentuk map

@@ -1,0 +1,18 @@
+beberapa methode yang sering di gunakan pada dom javascript
+
+
+1. getElementByID()
+2. getElementByClass()
+3. getElementByTagName()
+4. querySelector()
+5. querySelectorAll()
+6. setAttribut('attr','nama attr')
+7. createElement()
+8. createAttribut()
+9. appenChild()
+10. removeChild()
+11. replaceChild()
+12. inserBefore()
+
+13.classList = remove(),add(),toggle(),replace()
+contoh: document.querySelector('teks').classList.remove()

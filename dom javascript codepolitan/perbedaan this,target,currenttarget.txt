@@ -1,0 +1,22 @@
+1. target: target mengacu pada elemen DOM yang memicu event. Misalnya, jika Anda mengikat event click pada elemen <button>, maka saat button tersebut diklik, target akan merujuk pada elemen <button> itu sendiri. Dalam beberapa kasus, target dapat berbeda dengan currentTarget jika event terjadi pada elemen yang bersarang atau anak elemen dari elemen yang sebenarnya diikat eventnya.
+
+2. currentTarget: currentTarget mengacu pada elemen DOM yang menangani event saat ini. Saat Anda mengikat event pada elemen, currentTarget akan merujuk pada elemen tersebut. Jika event terjadi pada elemen anak yang bersarang, currentTarget tetap merujuk pada elemen yang diikat eventnya. Dalam kata lain, currentTarget tetap tidak berubah selama event propagasi berlangsung, sedangkan target bisa berubah.
+
+3. this: this merujuk pada objek yang sedang dijalankan saat ini. Dalam konteks event handling, this biasanya mengacu pada elemen DOM yang memicu event. Namun, perilaku this dapat bervariasi tergantung pada bagaimana Anda mengikat event dan apakah Anda menggunakan fungsi biasa atau fungsi panjang dalam event listener.
+
+Berikut adalah contoh penggunaan ketiga konsep tersebut:
+
+javascript
+Copy code
+document.getElementById('myButton').addEventListener('click', function(event) {
+  console.log(event.target);        // Mengakses elemen yang memicu event
+  console.log(event.currentTarget); // Mengakses elemen yang menangani event saat ini
+  console.log(this);                // Mengakses elemen yang memicu event (biasanya sama dengan event.target)
+});
+Perhatikan bahwa dalam contoh di atas, event.target, event.currentTarget, dan this merujuk pada elemen yang sama karena event diikat langsung pada elemen <button>. Namun, jika event handler ditetapkan pada elemen induk dan event terjadi pada elemen anak, event.target akan merujuk pada elemen anak, sedangkan event.currentTarget dan this akan merujuk pada elemen induk.
+
+
+
+
+
+

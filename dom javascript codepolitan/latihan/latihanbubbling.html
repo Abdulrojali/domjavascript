@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hidden{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+       <p class="click">this button  <button class="btn">click</button></p>
+    </p>
+    </div>
+    <script>
+        let parent=document.querySelector('.parent')
+        let btn=document.querySelector('.btn')
+        let click=document.querySelector('.click')
+
+        btn.addEventListener('click',function(e){
+            parent.style.backgroundColor=generateColor()
+            e.stopPropagation()
+        })
+        function generateColor(){
+            let r=Math.floor(Math.random()*225)
+            let g=Math.floor(Math.random()*225)
+            let b=Math.floor(Math.random()*225)
+            return `rgb(${r},${g},${b})`
+        }
+
+        click.addEventListener('click',function(){
+            parent.classList.toggle('hidden')
+        })
+    </script>
+</body>
+</html>

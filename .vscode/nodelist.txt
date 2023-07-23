@@ -1,0 +1,19 @@
+NodeList dalam JavaScript adalah objek yang merupakan kumpulan dari node-node dalam dokumen. 
+NodeList mirip dengan array, tetapi tidak memiliki semua method dan property yang dimiliki oleh array.
+ NodeList 
+ umumnya diperoleh melalui pemanggilan metode DOM seperti querySelectorAll() atau childNodes().
+
+ contoh :
+ var nodeList = document.querySelectorAll("p");
+
+// cara looping nodeList
+1. menggunakan foreach
+nodeList.forEach(function(node) {
+  console.log(node.textContent);
+});
+
+2. menggunakan for
+for (var i = 0; i < nodeList.length; i++) {
+  console.log(nodeList[i].textContent);
+}
+

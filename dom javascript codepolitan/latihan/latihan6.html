@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slide left and right</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            border: 1px solid black;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        body.active{
+            opacity: 0.5;
+            background-color: black;
+        }
+        .slideone,.slidetwo{
+            display: none;
+            width: 25%;
+            flex-direction: column;
+            gap: 25px;
+            justify-content: center;
+            align-items: center;
+            background-color: orange;
+        }
+        .slideone.active,.slidetwo.active{
+            width: 50%;
+            display: flex;
+            height: 100vh;      
+            overflow: hidden;      
+        }
+        .slideone a,.slidetwo a{
+            text-decoration: none;
+            color: black;
+            font-size: 2em;
+            font-weight: 800;
+            cursor: pointer;
+        }
+        .slideone a:hover,.slidetwo a:hover{
+            color: white;
+        }
+        .btn-slide{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .btn-slide button{
+            cursor: pointer;
+            display: inline-block;
+            width: 70px;
+            height: 30px;
+            border-radius: 5px;
+        }
+        .btn-slide button:hover{
+            opacity: 0.5;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="slideone">
+        <a href="">home</a>
+        <a href="">menu</a>
+        <a href="">about</a>
+    </div>
+    <div class="btn-slide">
+        <button class="leftSlide"onclick='handlerLeft()'>left slide</button>
+        <button class="rightSlide" onclick="handlerRight()">rightSlide</button>
+        <button class="opacity" onclick="handlerOpacity()">blur</button>
+    </div>
+    <div class="slidetwo">
+        <a href="">home</a>
+        <a href="">menu</a>
+        <a href="">about</a>
+    </div>
+    <script src="latihan6.js"></script>
+</body>
+</html>

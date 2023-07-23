@@ -1,0 +1,18 @@
+input dan change juga termasuk kedalam event dom javascript
+yang digunakan untuk menampung nilai dari input diketik maupun copy paste
+
+
+contoh
+
+let input=document.querySelector('.input')
+
+input akan menampilkan nilai yang di ketik secara realtime
+input.addEventListener('input',function(){
+    console.log(input.value)
+})
+
+sedangkan change akan menampilkan nilai apabila ada button yang di click
+input.addEventListener('change',function(){
+    console.log(input.value)
+})
+

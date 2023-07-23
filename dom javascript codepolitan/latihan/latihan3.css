@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+}
+.content input{
+    display: inline-block;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 0 20px;
+    cursor: pointer;
+}
+.content button{
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    border:1px solid gray;
+    cursor: pointer;
+}
+.content button:hover{
+    opacity: 0.5;
+}
+.contentOutput{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    grid-gap: 15px;
+}
+.grid{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    gap: 8px;
+    padding: 5px 20px; 
+    border-radius: 5px;
+    border: 1px solid red;
+    cursor: pointer;
+}
+.grid i{
+    font-size: .6em;
+    font-weight: 100;
+}
+.grid h3{
+    font-size: 2em;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.grid p{
+    font-size: 1em;
+    font-weight: 300;
+}
+.grid .hover{
+    position: absolute;
+    margin-top: 0;
+    margin-left: 16%;
+}
+.grid .hover:hover{
+    color: red;
+}
+.col p{
+    display: none;
+}
+.col p.active{
+    display: flex;
+}
+
+label{
+    text-align: left;
+}

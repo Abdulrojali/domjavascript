@@ -1,0 +1,36 @@
+classList adalah properti yang tersedia pada elemen DOM dalam JavaScript. Properti ini memberikan akses ke daftar kelas yang terkait dengan elemen tersebut. 
+Dengan classList, Anda dapat menambah, menghapus, 
+dan memeriksa kelas pada elemen DOM tanpa harus secara langsung memanipulasi atribut class.
+
+Berikut adalah beberapa metode yang dapat digunakan dengan classList:
+
+1.add(className1, className2, ...): Metode ini digunakan untuk menambahkan satu atau lebih kelas ke elemen.
+ Anda dapat memberikan satu atau lebih nama kelas sebagai argumen yang dipisahkan oleh koma. Contoh penggunaan:
+ var element = document.getElementById("myElement");
+element.classList.add("class1", "class2");
+
+
+2.remove(className1, className2, ...): Metode ini digunakan untuk menghapus satu atau lebih kelas dari elemen. Anda dapat memberikan satu atau lebih nama kelas 
+sebagai argumen yang dipisahkan oleh koma. Contoh penggunaan:
+var element = document.getElementById("myElement");
+element.classList.remove("class1", "class2");
+
+3.toggle(className, force): Metode ini digunakan untuk menambahkan atau menghapus kelas dari elemen berdasarkan keberadaannya. Jika kelas sudah ada, maka akan dihapus. Jika kelas belum ada, maka akan ditambahkan. Jika argumen opsional force diatur sebagai true, 
+maka kelas akan ditambahkan tanpa memeriksa keberadaannya. Contoh penggunaan:
+var element = document.getElementById("myElement");
+element.classList.toggle("class1");
+
+4.contains(className): Metode ini digunakan untuk memeriksa apakah elemen memiliki kelas tertentu. Jika kelas ada, maka metode ini mengembalikan true; jika tidak,
+ maka mengembalikan false. Contoh penggunaan:
+ var element = document.getElementById("myElement");
+var hasClass = element.classList.contains("class1");
+
+5.replace(oldClass, newClass): Metode ini digunakan untuk mengganti kelas lama dengan kelas baru pada elemen. Jika kelas lama ada, maka akan diganti dengan kelas baru; jika kelas lama tidak ada, 
+maka kelas baru akan ditambahkan. Contoh penggunaan:
+var element = document.getElementById("myElement");
+element.classList.replace("oldClass", "newClass");
+
+6.item(index): Metode ini digunakan untuk mengakses kelas pada indeks tertentu dalam daftar kelas elemen. 
+Indeks dimulai dari 0. Contoh penggunaan:
+var element = document.getElementById("myElement");
+var classAtIndex = element.classList.item(0);

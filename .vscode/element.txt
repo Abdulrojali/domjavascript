@@ -1,0 +1,20 @@
+element adalah node berbentuk element
+
+ 1.property yang ada dielement
+ * element.id           ambil id di element
+ * element.className    ambil class di element
+ * element.tagName      ambil tag html di element
+ * element.innerHTML    ambil isi dari element
+ * element.attributes   ambil atribut di element
+
+
+ 2. method yang ada di element
+ *element.firstChild          cari anak pertama di element
+ *element.lastChild           cari anak terakhir di element
+ *element.previousSibling     cari sodara sebelum di element
+ *element.nextSibling         cari sodara setelah di element
+ *element.parentElement       cari parent di element
+ *element.remove()            hapus element di element
+ *element.add()                tambah element 
+ *element.toggle()             apabila belum ada element tambah element
+ *element.replace(lama,baru)   mengganti element baru 

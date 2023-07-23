@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header .headerlogo a{
+    font-size: 2.4em;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+header .headerlinks{
+    display: flex;
+    gap: 25px;
+}
+header .headerlinks .col{
+    font-size: 1.5em;
+}
+header .headerlinks .this{
+    display: flex;
+    flex-direction:column;
+    gap: 5px;
+}
+header .headerlinks .this ul{
+    display: none;
+}
+header .headerlinks .this li a{
+   color: white;
+   font-size: 1em;
+}
+header .headerlinks .this ul.active{
+    position: absolute;
+    top: 50px;
+    padding: 20px;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    background-color: orange;
+}

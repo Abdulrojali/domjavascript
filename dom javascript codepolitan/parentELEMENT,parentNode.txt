@@ -1,0 +1,13 @@
+perbedaan parent element dan parent node
+
+ * parentElement mengembalikan element html yang menjadi induk
+ contoh :
+ var childElement = document.getElementById("childElement");
+var parentElement = childElement.parentElement;
+
+
+ * parentNode mengembalikan node dalam bentuk yang lebih umum
+ contoh :
+ var childElement = document.getElementById("childElement");
+var parentNode = childElement.parentNode;
+

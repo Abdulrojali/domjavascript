@@ -1,0 +1,4 @@
+keyword event pada dom javascript
+
+keydown: Terpicu ketika tombol keyboard ditekan.
+keyup: Terpicu ketika tombol keyboard dilepas setelah ditekan

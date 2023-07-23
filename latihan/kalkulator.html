@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .center{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            padding: 20px;
+        }
+        .col-1{
+            display: flex;
+            gap: 5px;
+        }
+        .col-1 a{
+            padding: 5px;
+            text-decoration: none;
+            color: white;
+            background-color: orange;
+            border: none;
+            border-radius: 5px;
+        }
+        .col-1 a:hover{
+            opacity: 0.5;
+        }
+        .hasil{
+            padding: 20px;
+            font-size: 2em;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <div class="col-1">
+            <a href="">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <a href="">4</a>
+        </div>
+        <div class="col-1">
+           <a href="">5</a>
+           <a href="">6</a>
+           <a href="">7</a>
+           <a href="">8</a>
+        </div>
+        <div class="col-1">
+            <a href="">9</a>
+            <a href="">0</a>
+            <a href="">+</a>
+            <a href="">*</a>
+        </div>
+        <div class="col-1">
+            <a href="">%</a>
+            <a href="">-</a>
+            <a href="">=</a>
+            <a href="">null</a>
+        </div>
+    </div>
+    <div class="hasil">
+        <p class="angka-pertama"></p>
+        <p>=</p>
+        <p class="total"></p>
+    </div>
+    <script src="kalkulator.js"></script>
+</body>
+</html>

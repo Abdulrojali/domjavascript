@@ -1,0 +1,23 @@
+cara merubah nodelist menjadi node
+
+ada 3 cara untuk merubah nodelist menjadi node
+
+1. cara pertama
+mengambil node berdasarkan indeks
+contoh:
+let section=document.querySelectorAll('section')
+let node=section[0];
+
+
+2. cara kedua
+mengambil node menggunakan methode item()
+contoh:
+let section=document.querySelectorAll('section')
+let node=section.item(0);
+
+3. cara ketiga
+mengambil node menggunakan methode Array.from()
+contoh: 
+let section=document.querySelectorAll('section')
+let nodeArray=Array.from(section)// mengkonfersi nodelist menjadi Array
+let node=nodeArray[0];

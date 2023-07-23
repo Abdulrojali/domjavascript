@@ -1,0 +1,25 @@
+1. menggunakan appen (element yang akan di tambah)
+contoh :
+let h2=document.createElement('h2')
+h2.appen('ini teks') output <h2> ini teks</h2>
+
+2. menggunakan appenChild(element yang akan di tambah)
+contoh :
+let h2=document.createElement('h2')
+let teks=document.createTextNode('ini teks')
+h2.appenChild(teks)
+
+
+3. menggunakan insertAdjacentElement(posisi,element yang akan di tambah)
+contoh :
+let h2=document.createElement('h2')
+h2.innerHTML='ini teks'
+let output=document.querySelector('.output')
+output.insertAdjacentElement('afterend',h2)
+
+
+posisi yang di gunakan pada method insertAdjacentElement: 
+1. 'beforebegin': Before the targetElement itself.
+2. 'afterbegin': Just inside the targetElement, before its first child.
+3. 'beforeend': Just inside the targetElement, after its last child.
+4. 'afterend': After the targetElement itself.

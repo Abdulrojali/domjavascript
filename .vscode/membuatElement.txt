@@ -1,0 +1,12 @@
+cara membuat element di dom javascript
+
+1. document.createElement('p')
+contoh: let p=document.createElement('p')
+
+2. document.createAttribut('src/href')
+contoh let link=document.createAttribut('src')
+
+
+// cara menambahkan attribut baru kedalam element baru
+p.append(link)
+

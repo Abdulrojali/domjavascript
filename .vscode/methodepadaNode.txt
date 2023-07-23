@@ -1,0 +1,18 @@
+Berikut adalah beberapa metode penting yang sering digunakan pada objek Node dalam DOM JavaScript:
+
+appendChild(node): Menambahkan node sebagai anak terakhir dari node saat ini.
+removeChild(node): Menghapus node anak dari node saat ini.
+replaceChild(newNode, oldNode): Menggantikan node lama dengan node baru.
+cloneNode(deep): Membuat salinan node, dengan opsional deep untuk menentukan apakah salinan tersebut juga harus mencakup anak-anaknya.
+hasChildNodes(): Mengembalikan true jika node memiliki setidaknya satu anak, dan false jika tidak.
+parentNode: Mengembalikan node induk dari node saat ini.
+childNodes: Mengembalikan NodeList yang berisi semua node anak dari node saat ini.
+firstChild: Mengembalikan node anak pertama dari node saat ini.
+lastChild: Mengembalikan node anak terakhir dari node saat ini.
+previousSibling: Mengembalikan node saudara sebelumnya dari node saat ini (node sejajar sebelumnya dalam hierarki).
+nextSibling: Mengembalikan node saudara berikutnya dari node saat ini (node sejajar berikutnya dalam hierarki).
+nodeValue: Mengatur atau mengembalikan nilai teks dari node (hanya berlaku untuk node teks).
+nodeName: Mengembalikan nama tag dari elemen (hanya berlaku untuk elemen).
+Terdapat pula beberapa metode tambahan yang berguna, seperti querySelector dan querySelectorAll, yang dapat digunakan untuk mencari elemen dengan menggunakan selektor CSS. Selain itu, ada juga metode addEventListener untuk menambahkan event listener ke node, dan setAttribute untuk mengatur atribut pada elemen.
+
+Pemahaman mengenai metode-metode ini akan membantu Anda dalam memanipulasi struktur DOM dan melakukan operasi yang diperlukan dalam pengembangan web menggunakan JavaScript.

@@ -1,0 +1,12 @@
+document pada dom merepresentasikan halaman web 
+
+1. property yang ada di document
+* document.getElementById(): Method ini mengembalikan elemen dengan ID yang sesuai.
+* document.getElementsByClassName(): Method ini mengembalikan daftar elemen yang memiliki kelas CSS yang sesuai.
+* document.getElementsByTagName(): Method ini mengembalikan daftar elemen dengan tag HTML yang sesuai.
+* document.querySelector(): Method ini mengembalikan elemen pertama yang cocok dengan selector CSS yang diberikan.
+* document.querySelectorAll(): Method ini mengembalikan daftar elemen yang cocok dengan selector CSS yang diberikan.
+* document.createElement(): Method ini membuat elemen HTML baru dengan tag yang ditentukan.
+* document.URL: Properti ini mengembalikan URL lengkap dari dokumen saat ini.
+* document.cookie: Properti ini mengembalikan atau mengatur cookie yang terkait dengan dokumen saat ini.
+* document.innerHTML : mengambil isi dari document

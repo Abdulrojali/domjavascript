@@ -1,0 +1,10 @@
+event digunakan untuk menindaklanjutin dari perintah dari user
+
+beberapa macam event yang ada di dom javascript
+
+1	onload	Event terjadi ketika halaman html selesai di tampilkan
+2	onclick	Event terjadi ketika suatu elemen HTML diklik
+3	onchange	Event terjadi ketika nilai suatu elemen berubah
+4	onmouseover	Event terjadi ketika pointer mouse menyentuh/memasuki suatu elemen HTML
+5	onmouseout	Event terjadi ketika pointer mouse keluar dari suatu elemen HTML
+6	onsubmit	Event terjadi ketika form di submit

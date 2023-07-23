@@ -1,0 +1,14 @@
+Metode preventDefault() digunakan dalam DOM JavaScript untuk mencegah perilaku default dari 
+suatu peristiwa (event) yang biasanya terjadi pada elemen tertentu. 
+Hal ini berguna ketika Anda ingin mencegah tindakan bawaan yang biasanya terjadi saat suatu
+ peristiwa terjadi, misalnya, mencegah pengiriman formulir atau menghentikan navigasi ke 
+ tautan.
+
+Berikut adalah contoh cara menggunakan preventDefault() dalam DOM JavaScript:
+
+var linkElement = document.getElementById('myLink'); // Mengambil elemen tautan
+
+linkElement.addEventListener('click', function(event) {
+  event.preventDefault(); // Mencegah navigasi ke tautan saat diklik
+  // Lakukan tindakan lain yang diinginkan
+});

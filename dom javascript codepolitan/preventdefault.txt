@@ -1,0 +1,12 @@
+prevent default adalah sebuah method yang digunakan untuk mereset sebuah event yang memiliki
+fungsi reset halaman seperti tag form maupun tag a
+
+contoh penggunaan nya
+
+let form=document.querySelector('form')
+form.addEventListener('click',(e)=>{
+    e.preventDefault()
+})
+
+apabila bentuk nya nodelist maka harus di looping dan di beri parameter agar preventDefault dapat berfungsi
+karena nodelist tidak memiliki methode preventDefault

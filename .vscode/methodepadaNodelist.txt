@@ -1,0 +1,12 @@
+Berikut adalah beberapa metode yang sering digunakan pada objek NodeList dalam DOM JavaScript:
+
+forEach(callback): Mengiterasi setiap elemen dalam NodeList dan menjalankan fungsi callback untuk setiap elemen.
+item(index): Mengembalikan elemen pada indeks yang ditentukan dalam NodeList.
+length: Mengembalikan jumlah elemen dalam NodeList.
+forEach() dengan call() atau apply(): Memungkinkan Anda menggunakan metode forEach() pada NodeList seperti array. Contohnya: Array.prototype.forEach.call(nodeList, callback).
+Array.from(nodeList): Mengonversi NodeList menjadi array. Setelah dikonversi menjadi array, Anda dapat menggunakan metode array seperti forEach(), map(), dan lainnya.
+Metode forEach sangat berguna untuk melakukan tindakan pada setiap elemen dalam NodeList, seperti memanipulasi properti atau menambahkan event listener. Metode item dan length memungkinkan Anda mengakses elemen-elemen individual dalam NodeList berdasarkan indeksnya.
+
+Penting untuk diingat bahwa NodeList bukanlah array sejati, dan hanya memiliki metode terbatas. Namun, Anda dapat menggunakan metode array dengan mengonversi NodeList menjadi array menggunakan metode Array.from() atau menggunakan pendekatan call() atau apply() untuk menggunakan metode array pada NodeList.
+
+Selain metode-metode di atas, penting juga untuk diingat bahwa NodeList bersifat live, yang berarti jika elemen dalam struktur DOM berubah, NodeList akan diperbarui secara otomatis.

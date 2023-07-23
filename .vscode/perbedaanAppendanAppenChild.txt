@@ -1,0 +1,6 @@
+perbedaan appen dan appenChild
+
+1. appen di gunakan untuk menggabungkan element menjadi document content
+2. sedangkan appenChild menggabungkan element menjadi node list
+
+jadi apabila elementnya banyak gunakan appenChild sedangkan element nya hanya satu bisa menggunakan appen

@@ -1,0 +1,19 @@
+remove dan removeChild berfungsi untuk menghapus element 
+tetapi ada perbedaanya
+
+* untuk menghapus element removeChild harus mencari element parentnya terlebih dahulu
+baru bisa mengakses untuk menghapus child yang di pilih
+
+
+* sedangkan remove hanya perlu memanggil elemnt yang akan di hapus maka akan terhapus dengan sendirinya
+
+
+contoh:
+let data=document.querySelector('p')
+data.remove()
+
+
+contoh :
+let li=document.querySelector('li')
+let parent=li.parentElement
+parent.removeChild(li)

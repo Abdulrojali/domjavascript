@@ -1,0 +1,31 @@
+Berikut adalah beberapa event DOM JavaScript yang sering digunakan:
+
+"click": Event ini terpicu saat pengguna mengklik elemen HTML.
+Contoh: element.addEventListener("click", function() { // kode yang ingin dijalankan })
+
+"submit": Event ini terpicu saat pengguna mengirim formulir HTML.
+Contoh: element.addEventListener("submit", function(event) { // kode yang ingin dijalankan event.preventDefault(); // menghentikan perilaku default })
+
+"keydown": Event ini terpicu saat pengguna menekan tombol di keyboard.
+Contoh: element.addEventListener("keydown", function(event) { // kode yang ingin dijalankan })
+
+"mouseover": Event ini terpicu saat kursor mouse bergerak ke atas elemen.
+Contoh: element.addEventListener("mouseover", function() { // kode yang ingin dijalankan })
+
+"change": Event ini terpicu saat nilai elemen HTML berubah (seperti input atau select).
+Contoh: element.addEventListener("change", function() { // kode yang ingin dijalankan })
+
+"load": Event ini terpicu saat elemen atau halaman selesai dimuat.
+Contoh: window.addEventListener("load", function() { // kode yang ingin dijalankan })
+
+"scroll": Event ini terpicu saat pengguna menggulir halaman.
+Contoh: window.addEventListener("scroll", function() { // kode yang ingin dijalankan })
+
+"resize": Event ini terpicu saat ukuran jendela browser berubah.
+Contoh: window.addEventListener("resize", function() { // kode yang ingin dijalankan })
+
+"focus": Event ini terpicu saat elemen mendapatkan fokus.
+Contoh: element.addEventListener("focus", function() { // kode yang ingin dijalankan })
+
+"blur": Event ini terpicu saat elemen kehilangan fokus.
+Contoh: element.addEventListener("blur", function() { // kode yang ingin dijalankan })

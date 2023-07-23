@@ -1,0 +1,14 @@
+node adalah collection atrr,document,dan element
+
+1.method dan property node
+* node.FirstChild() mengambil element pertama
+* node.LastChild()  mengambil element terakhir
+* node.PreviousSibling() mengambil element sebelumnya
+* node.NextSibling()   mengambil element setelah nya
+* getElementById()   mengambil element id 
+* getElementByClass() mengambil element class
+* node.parentNode()   mengambil parent node
+* node.parentElement() mengambil parent element
+* node.appenChild()   menambahkan anak element
+* node.removeChild()  menghapus anak element
+* node.textContent() mengambil isi dari node

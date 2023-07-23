@@ -1,0 +1,27 @@
+di element terdapat beberapa attribut
+
+contoh attribut : src,alt,href,class,id
+diantaranya :
+1. getAttribut mengambil attribut yang ada didalam tag html yang di panggil
+2. setAttribut  ubah atribut yang ada di tag html 
+
+cara penggunaannya
+
+1. getAttribut 
+let a=document.querySelector('a')
+a.getAttribut() // mengambil seluruh attribut yang ada di tag a
+
+
+2. setAttribut
+let a=document.querySelector('a')
+a.setAttribut('src','react.jpg')  merubah attribut src dengan link react.jpg
+
+
+
+
+getAttribute: Metode "getAttribute" digunakan untuk mengakses nilai atribut atau properti dari suatu objek. Dalam konteks HTML dan JavaScript, misalnya, Anda dapat menggunakan metode ini untuk mendapatkan nilai atribut dari elemen HTML.
+ Misalnya, jika Anda memiliki elemen dengan atribut "id",
+ Anda dapat menggunakan "getAttribute" untuk mendapatkan nilai ID tersebut. 
+
+ setAttribute: Metode "setAttribute" digunakan untuk mengubah atau mengatur nilai atribut atau properti suatu objek. Dalam konteks HTML dan JavaScript, Anda dapat menggunakan metode ini untuk mengubah nilai atribut elemen HTML. Misalnya,
+  Anda dapat menggunakan "setAttribute" untuk mengubah nilai atribut "src" dari elemen gambar (img).

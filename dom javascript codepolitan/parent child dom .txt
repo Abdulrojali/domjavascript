@@ -1,0 +1,23 @@
+Dalam DOM (Document Object Model) JavaScript, istilah "parent", "child", dan "sibling" merujuk pada hubungan hierarkis antara elemen-elemen DOM. Berikut adalah penjelasan singkat tentang setiap istilah:
+
+1. Parent (Induk): Merujuk pada elemen yang menjadi "induk" atau "pemilik" dari elemen yang dipilih. Elemen tersebut berada di atas elemen yang dipilih dalam struktur hierarkis. Anda dapat menggunakan properti parentNode untuk mengakses elemen induk dari elemen yang dipilih. 
+Contoh:
+var childElement = document.getElementById("childElement");
+var parentElement = childElement.parentNode;
+
+
+2. Child (Anak): Merujuk pada elemen-elemen yang berada di "bawah" elemen yang dipilih dalam struktur hierarkis. Elemen-elemen ini disebut "anak" dari elemen yang dipilih.
+ Anda dapat menggunakan metode childNodes, children, atau querySelectorAll 
+untuk mengakses elemen-elemen anak. Contoh:
+var parentElement = document.getElementById("parentElement");
+var childElements = parentElement.childNodes;
+
+
+
+3.Sibling (Saudara): Merujuk pada elemen-elemen yang berada pada tingkat yang sama dalam struktur hierarkis dan memiliki induk yang sama. 
+Elemen-elemen ini disebut "saudara" satu sama lain. Anda dapat menggunakan properti previousSibling, nextSibling, atau previousElementSibling,
+ nextElementSibling untuk mengakses elemen-elemen saudara. Contoh:
+
+var siblingElement = document.getElementById("siblingElement");
+var previousSibling = siblingElement.previousSibling;
+var nextSibling = siblingElement.nextSibling;

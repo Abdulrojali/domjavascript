@@ -1,0 +1,7 @@
+perbedaan dari innerHtml innertext textContent
+
+innerText akan mereturn teks atau mengubah teks biasa saja
+textContent akan mereturn teks beserta jarak nya
+innerHtml akan mereturn teks,jarak,dan tag htmlnya
+
+innerHtml sering di gunakan untuk membuat element menggunakan string literal
